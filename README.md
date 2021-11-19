@@ -1,4 +1,4 @@
-# KPMG_ML_Challenge
+<h1 style='text-align:center;'>KPMG_ML_Challenge</h1>
 
 # Part1. Know the facts with descriptive analytics.
 ---
@@ -17,7 +17,7 @@
 
 
 ## Part2.1 Model Performance
-## Part1.3 Model Evaluation
+## Part2.2 Model Evaluation
 
 # Part3. Know your strategy with prescriptive analytics.
 ---
