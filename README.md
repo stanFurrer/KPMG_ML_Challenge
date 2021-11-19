@@ -2,8 +2,8 @@
 <p align="center">
   <img src="Images/KPMG_DATA_SCIENCE.png"   Width="500"></center>
 </p>
-- `#F00` <regasgasfgafg
-![#1589F0](https://via.placeholder.com/15/1589F0/000000?text= Part1. Know the facts with descriptive analytics.)
+
+# Part1. Know the facts with descriptive analytics.
 ---
 
 ## Part1.1 About the Data
