@@ -1,8 +1,5 @@
-<h1 align='center'>
-  KPMG_ML_Challenge
-</h1>
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/KPMG_logo.svg"   Width="200"> tetststtasdvasd</center>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/KPMG_logo.svg"   Width="200"> <h1>ML Challenges</h1></center>
 </p>
 # Part1. Know the facts with descriptive analytics.
 ---
