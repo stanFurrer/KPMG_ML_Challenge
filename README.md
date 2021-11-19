@@ -2,7 +2,7 @@
   KPMG_ML_Challenge
 </h1>
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/KPMG_logo.svg"   Width="300" ></center>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/KPMG_logo.svg"   Width="200"> tetststtasdvasd</center>
 </p>
 # Part1. Know the facts with descriptive analytics.
 ---
