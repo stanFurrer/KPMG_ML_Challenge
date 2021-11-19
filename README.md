@@ -1,16 +1,23 @@
 # KPMG_ML_Challenge
 
-# Part1. Descriptive Analytics
+# Part1. Know the facts with descriptive analytics.
+---
 
-## Part1. About the Data
-
-
-## Part2. Missing Value Imputations
+## Part1.1 About the Data
 
 
-## Part3. Data Analysis
-
-# Part2. Predictive Analytics
+## Part1.2 Missing Value Imputations
 
 
-# Part3. Prescriptive Analytics
+## Part1.3 Data Analysis
+
+# Part2. Know what to expect with predictive analytics.
+---
+
+
+
+## Part2.1 Model Performance
+## Part1.3 Model Evaluation
+
+# Part3. Know your strategy with prescriptive analytics.
+---
