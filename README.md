@@ -1,9 +1,9 @@
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) 
 <p align="center">
   <img src="Images/KPMG_DATA_SCIENCE.png"   Width="500"></center>
 </p>
 
-# #1589F0 Part1. Know the facts with descriptive analytics.
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) #  Part1. Know the facts with descriptive analytics.
 ---
 
 ## Part1.1 About the Data
