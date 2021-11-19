@@ -2,6 +2,7 @@
   <img src="Images/KPMG_DATA_SCIENCE.png"   Width="500"></center>
 </p>
 ```diff
+
 # Part1. Know the facts with descriptive analytics.
 ```
 ---
