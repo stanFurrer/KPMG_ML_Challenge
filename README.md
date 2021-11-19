@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/KPMG_logo.svg"   Width="200"> <p>ML Challenges</p></center>
+  <img src="Images/KPMG_DATA_SCIENCE.png"   Width="200"></center>
 </p>
 # Part1. Know the facts with descriptive analytics.
 ---
