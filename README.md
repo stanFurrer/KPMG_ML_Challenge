@@ -1,4 +1,4 @@
-<h1 style='text-align:center;'>
+<h1 align='center'>
   KPMG_ML_Challenge
 </h1>
 <p align="center">
