@@ -1,4 +1,3 @@
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) 
 <p align="center">
   <img src="Images/KPMG_DATA_SCIENCE.png"   Width="500"></center>
 </p>
