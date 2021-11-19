@@ -1,8 +1,9 @@
 <p align="center">
   <img src="Images/KPMG_DATA_SCIENCE.png"   Width="500"></center>
 </p>
-
-[# Part1. Know the facts with descriptive analytics.](https://via.placeholder.com/15/f03c15/000000?text=+)
+```diff
+# Part1. Know the facts with descriptive analytics.
+```
 ---
 
 ## Part1.1 About the Data
