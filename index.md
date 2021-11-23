@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Take Home Challenge
 
 You can use the [editor on GitHub](https://github.com/stanFurrer/KPMG_ML_Challenge/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
