@@ -542,7 +542,7 @@ To evaluate the model performance we will use the NDCG score, f1 score and the a
 
 <h2 id="Modeling">B. Modeling</h3> 
 
-We select tree baseline model and tree tree-based model with an increasing level of complexity. 
+We select three **baseline model** and three **tree-based** model with an increasing level of complexity. 
 
 **Multinominal Logistic Regression** : 
 > * Logistic regression uses functions called the logit functions,that helps derive a relationship between the dependent variable and independent variables by predicting the probabilities or chances of occurrence. It is the go-to technique for classification. **However** it as a lot of assumption and we haven't process our data to match them. (minimal or no multi-collinearity, independent variables that linearly related to log of odds, a large sample in each classes, removing outliers as it introduce autocorrelation...)
