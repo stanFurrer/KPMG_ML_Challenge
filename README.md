@@ -345,10 +345,19 @@ We will use the Inter Quartile Range(IQR) to detect the outliers. IQR tells us t
 </p>
 
 **Obervation** : 
-> * The over all satisfaction is either very good (4.5-5) or very bad
-> * The number of Bedrooms is mostly between 1 and 3 and the number of accommodates between 1 and 4
-> * Latitude and Longitude present the characteristics of Berlin
-> * The price and review distribution seems to follow logarithmic curves. We will futher analysis their characteristics in the next sections.
+> * As expected when taking the log scale of the price we obtain a distribution that is almost normal.
+> * Removing the outliers with IQR reveals the most relevant price distributions.
+> * We will keep the outliers in the rest of the project as they are most probably linked to the situation where we have a ot of bedrooms or accomodation.
+
+<h2 id="bivariate">E. Bivariate Analysis</h2>
+
+<h2 id="multivariate">F. Multivariate Analysis</h2>
+
+
+
+
+<h2 id="geo">G. Geographic Analysis</h2>
+
 
 
 ---
