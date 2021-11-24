@@ -131,7 +131,17 @@ C. [Conclusion and Future work](#Conclusion)<br>
 
 ---
 # 3. Prescriptive Analytics
-<h2 id="Preprocessing-id">A. Result Analysis</h3>
+
+In this section we will try to understand how we might improve our recommender system. 
+
+> - We will examine the misclassification through the lens of the f1-score per area, emphasizing the number of occurrences of each class.
+> - We will make the assumption that Rob wishes to live at most 5km far from KPMG headquarter. From this assumption, we will retraine our model to get better performance on this more specific task.
+> - We observe better performance of our recommender system based on all the metrics.  The main reason for this improvement comes from the better class balance induced by our assumption. Indeed, there is more listening in these areas.
+> - Finally, we will delineate our conclusion and present improvements
+
+<h2 id="result">A. Result Analysis</h3>
+
+
 <h2 id="fine">B. Fine-Tuning</h3> 
 
 
