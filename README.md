@@ -118,27 +118,19 @@ B. [Modeling](#Modeling)<br>
 
 **4. Prescriptive Analytics**<br>
 A. [Result Analysis](#result)<br>
-B. [Fine Graining the conclusion](#fine)<br>
+B. [Fine-Tuning](#fine)<br>
 C. [Conclusion and Future work](#Conclusion)<br>
- 
-# Part1. Know the facts with descriptive analytics.
+
 ---
+# 1. Descriptive Analytics
 
-## Part1.1 About the Data
-
-
-## Part1.2 Missing Value Imputations
-
-
-## Part1.3 Data Analysis
-
-# Part2. Know what to expect with predictive analytics.
 ---
-
-
-
-## Part2.1 Model Performance
-## Part2.2 Model Evaluation
-
-# Part3. Know your strategy with prescriptive analytics.
+# 2. Predictive Analytics
+<h2 id="Preprocessing-id">A. Preprocessing</h3>
+<h2 id="Modeling">B. Modeling</h3> 
 ---
+# 3. Prescriptive Analytics
+<h2 id="Preprocessing-id">A. Result Analysis</h3>
+<h2 id="fine">B. Fine-Tuning</h3> 
+<h2 id="Conclusion">C. Conclusion and Future work</h3> 
+
