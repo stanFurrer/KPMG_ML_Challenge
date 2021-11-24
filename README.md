@@ -275,7 +275,7 @@ C. [Conclusion and Future work](#Conclusion)<br>
 <h2 id="Outlier">D. Normality and Outliers Analysis</h2>
 
 **Important Note :** 
->In the predictive part we will show that tree based model have the best performance. Tree based model have the nice properties to handle outliers. We have compare the performance of our model when removing outlier, when using the log-scale of the price and when letting price and review untouch. The result have shown that tree-based model performance get hurt when we proceed outlier removal as describe in the following. 
+>In the predictive part we will show that tree based model have the best performance. Tree based model have the nice properties to handle outliers and un-balanced classes. We have compared the performance of our model when removing outlier, when using the log-scale of the price and when doing nothing. The result have shown that tree-based model performance are the best when not proceeding log-scale and outliers removal. The explaination can be found in the predictive analytics part. 
 
 However, we will still compute the price-log scale in order to make statistical test.
 
@@ -340,7 +340,16 @@ We will use the Inter Quartile Range(IQR) to detect the outliers. IQR tells us t
 > - Outliers :  <font color = "red"><b>12.1%</b></font>
 > - Clean_price : <font color = "green"><b>87.9% </b></font>with reviews in [0, 26]
 
-**Note :** We haven't proceed to the removal of the Outlier has it hurt the performance. However, it might be usefull in the future 
+<p align="center">
+  <img src="Images/normality.png"   Width="800" >
+</p>
+
+**Obervation** : 
+> * The over all satisfaction is either very good (4.5-5) or very bad
+> * The number of Bedrooms is mostly between 1 and 3 and the number of accommodates between 1 and 4
+> * Latitude and Longitude present the characteristics of Berlin
+> * The price and review distribution seems to follow logarithmic curves. We will futher analysis their characteristics in the next sections.
+
 
 ---
 # 2. Predictive Analytics
