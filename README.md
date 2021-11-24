@@ -57,6 +57,10 @@
 
  **Results:**
  
+<p align="center">
+  <img src="Images/table_KPMG.png " ></center>
+</p>
+
  >**Model Performance Evaluation :** All Berlin **(Standard Solution)**
 
 | Top 3 Models             | NDCG_score_test           | Accuracy_score_test  |
