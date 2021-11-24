@@ -150,7 +150,9 @@ C. [Conclusion and Future work](#Conclusion)<br>
 ><i> The variables classified as quantitative are the characteristics that can be measured on a quantitative scale, that is, they present numerical values that make sense, for example: <b>Height</b>, <b> Mass</b>, <b>Income</b> and <b>Age</b>.</i>
 
 ---
-<center><img src = "https://i.stack.imgur.com/3QemG.gif"></center>
+<p align="center">
+  <img src = "https://i.stack.imgur.com/3QemG.gif">
+</p>
 
 **Ratio Testing and Training :** 9% and 91%
 
