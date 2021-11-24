@@ -98,8 +98,28 @@
 | **Brunnenstr. Süd**           | 7.353         | 
 | **Prenzlauer Berg Südwest**   | 6.456         | 
 | **Prenzlauer Berg Nordwest**  | 6.025         | 
- 
 
+ ---
+# Outline
+
+**1. Descriptive Analytics**<br>
+A. [Variable types](#type)<br>
+B. [Missing Values Analysis and Treatment](#missing)<br>
+C. [Frequency Distribution](#freq)<br>
+D. [Outliers Analysis](#Outlier)<br>
+E. [Bivariate Analysis](#bivariate)<br>
+F. [Multivariate Analysis](#multivariate)<br>
+G. [Geographic Analysis](#geo)<br>
+H. [Normality](#Normality)<br>
+
+**3. Predictive Analytics**<br>
+A. [Preprocessing](#Preprocessing)<br>
+B. [Modeling](#Modeling)<br>
+
+**4. Prescriptive Analytics**<br>
+A. [Result Analysis](#result)<br>
+B. [Fine Graining the conclusion](#fine)<br>
+C. [Conclusion and Future work](#Conclusion)<br>
  
 # Part1. Know the facts with descriptive analytics.
 ---
