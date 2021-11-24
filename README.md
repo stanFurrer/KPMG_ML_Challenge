@@ -321,6 +321,12 @@ In the following, we propose a list of potential improvements. We believe the pe
 > * Having access to the review comment might be usefull. We could compute a sentiment score with a BERT model finetuned for emotion classification.  
 > * We could also include image quality as a feature. Shunyuan et al. 2017 [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2976021), have shown that Airbnb property demand changed after the acquisition of verified images (taken by Airbnb’s photographers). 
 
+
+**Data Centric :**
+> * Use tree pruning and Features selection to reduce the Overfitting
+> * Conduct a grid search for hyper parmeter selection. **PLEASE NOTE** We have implemented the code for the grid search, however due to time constrain we haven't run it.
+> * Try Deep Deural Network. Specifically, try a Multi-Layers-Perceptron with as regularization dropout and layer-normalization and as optimizer Adam. (This is my speciality. I have a lot of project where I implemented all sort of Deep Learning Architecture. However, I prioritize the interpretability of the project rather than optimizing the performance.)
+
 **Lessons Learned**
 
 1. Great opportunity to work with geographic data and to connect them to the model performance.
