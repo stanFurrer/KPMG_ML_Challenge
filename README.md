@@ -366,6 +366,15 @@ The most interesting information :
 <h2 id="geo">G. Geographic Analysis</h2>
 
 
+<p align="center">
+  <img src="Images/geographic_info.png"   Width="800" >
+</p>
+
+**Obervation** : 
+The most interesting information : 
+> * The number of bedrooms and accommodates are correlated with the price. Indeed, if we have more room we expect to have a higher price.
+> * The month and years have no correlation with the price, the overall satisfaction, the bedrooms and the review. We could have use a forecasting approach to solve the problem. However, since there is no linear relation between the parameters and the date classification is a better approach. 
+
 
 ---
 # 2. Predictive Analytics
