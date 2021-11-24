@@ -165,7 +165,9 @@ In this section we will present our model candidate for the recommender tasks. S
 
 >**Kfold Cross Validation**: divide the data into folds and ensure that each fold is used as a testing set at some point. 
 
+<p align="center">
 <img src="https://miro.medium.com/proxy/1*E1e-8OmoqJaSmHxxPXcPGg.png" alt="" width="300" height="200" class="aligncenter size-full wp-image-13940" />
+</p> 
 
 >**StatifiedKfold** : In classification and regression, the target distribution must be preserved even after the data is split into multiple sets. More specifically, a binary target with 30 to 70 class ratios should still hold the same ratios in both the training and test sets.
 
