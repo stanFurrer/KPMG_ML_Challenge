@@ -30,14 +30,14 @@
 >* AirBnB-neighbourhoods geojson data : [neighbourhoods.geojson](http://insideairbnb.com/get-the-data.html)<br>
 >* AirBnB-subway_entrance geojson data : Go on website [overpass-turbo.eu](http://overpass-turbo.eu/) and type : 
 >```
-/*
-This is the Overpass query to get the Subway Entrance of Berlin.
-*/
-node
-  [railway=subway_entrance]
-  ({{bbox}});
-out;
-```
+>/*
+>This is the Overpass query to get the Subway Entrance of Berlin.
+>*/
+>node
+>  [railway=subway_entrance]
+> ({{bbox}});
+> out;
+> ```
 
  ---
 
