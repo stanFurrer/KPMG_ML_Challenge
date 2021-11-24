@@ -352,6 +352,11 @@ We will use the Inter Quartile Range(IQR) to detect the outliers. IQR tells us t
   <img src="Images/normality.png"   Width="800" >
 </p>
 
+
+<p align="center">
+  <img src="Images/normality_review.png"   Width="700" >
+</p>
+
 **Obervation** : 
 > * As expected when taking the log scale of the price we obtain a distribution that is almost normal.
 > * Removing the outliers with IQR reveals the most relevant price distributions.
