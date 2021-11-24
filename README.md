@@ -58,16 +58,17 @@
  **Results:**
  
 <p align="center">
-  <img src="Images/table_KPMG.png " ></center>
+  <img src="Images/table_KPMG.png Width="400"" ></center>
 </p>
 
  >**Model Performance Evaluation :** All Berlin **(Standard Solution)**
-
+<!---
 | Top 3 Models             | NDCG_score_test           | Accuracy_score_test  |
 | -------------          |:-------------:| -----: |
 | **Random Forest**      | 0.871         | 0.789  |
 | **Decision Tree**      | 0.803         | 0.801  |
 | **XGboosting**         | 0.766         | 0.596  |
+-->
 
 <p align="center">
   <img src="Images/Score1.png"   Width="500"></center>
