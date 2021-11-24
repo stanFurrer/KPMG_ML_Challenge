@@ -109,7 +109,8 @@
 | **Prenzlauer Berg Südwest**   | 6.456         | 
 | **Prenzlauer Berg Nordwest**  | 6.025         | 
 -->
- ---
+
+---
 # Outline
 
 **1. Descriptive Analytics**<br>
@@ -180,6 +181,9 @@ We will tailord our task by assuming that Rob wish to live at most 5 kilometer f
   <img src="Images/final_score.png"   Width="650"></center>
 </p>
 
+**Obervation** : 
+> * Our model have Better performance in term of the NDCG score, Accuracy and F1-score. The main cause is that the class unbalanced has be lowered by our assumption.
+> * The f1 score have less variance because we have a dense sampling for each area except for **Weißensee**. According to our webseach **Weißensee** is a calm residensial area where there is not so many AirBnB.
 
 <h2 id="Conclusion">C. Conclusion and Future work</h3> 
 
@@ -198,6 +202,7 @@ The recommender system we built is biased by our assumption that every user is i
 In the following, we propose a list of potential improvements. We believe the performance might be significantly improved if we include more parameters. The following might be considered as Data-centric improvement of the pipeline : 
 
 **Data Centric :**
+> * Use more data in order to have more dense sampling for each area. Add data from [insideairbnb](http://insideairbnb.com/)
 > * The distances to bus or railway station might be significant in the user's choise. [Here](https://medium.com/@brendan_ward/how-to-leverage-geopandas-for-faster-snapping-of-points-to-lines-6113c94e59aa) is an implementation for computin the shortest distance to subway given a data point.
 > * The Access to restaurants, shops, cafes, bars and pubs are important for Airbnb users.
 > * We removed the Host Id info : However if we would have past info about the host then it would propably influence the result
