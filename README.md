@@ -47,7 +47,7 @@
 **Solution :**
 > - **<i>About the Task</i>** :  Given that Rob is sharing the curent features of rental and we have access to the past activity of all users will use a **Classification Algorithm** to predict is current **locations.**
 > - **<i>About the location</i>** :  We don't want to be too intrusive in the life of Rob, therefore we will **scale the location classification** at the 96 borought of Berlin (see [here](https://en.wikipedia.org/wiki/Boroughs_and_neighborhoods_of_Berlin))
-> - **<i>About the Score</i>** : We will quantify the likelihood of Rob living in each of the 96 borought of Berlin with the predictive score output by our trained classifier. We will futher tailored our solution by assuming Rob want to live close to KPMG headquarters. Indeed the trafic in Berlin is very dense. He don't want to take too much time to go to work. Therefore we proposed a finetune solution with the constraint that the Airbnb rental have to be at less than 5kilometers from KPMG headquarter. (Only : Heidestraße 58, 10557 Berlin, Germany)
+> - **<i>About the Score</i>** : We will quantify the likelihood of Rob living in each of the 96 borought of Berlin by the predictive output score of our trained classifier. This score is the confidence score of the model on it's prediction and it can be interpreted as a probability score. We will futher tailored our solution by assuming Rob want to live close to KPMG headquarters. Indeed the trafic in Berlin is very dense. He don't want to take too much time to go to work. Therefore we proposed a finetune solution with the constraint that the Airbnb rental have to be at less than 5kilometers from KPMG headquarter. (Only : Heidestraße 58, 10557 Berlin, Germany)
 
 **Plan :**
 
