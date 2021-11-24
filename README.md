@@ -15,6 +15,20 @@
 ---
 # Description of the data
 
+AirBnB-Berlin Data : [Data 2015-2018](http://tomslee.net/category/airbnb-data)<br>
+AirBnB-neighbourhoods geojson data : [neighbourhoods.geojson](http://insideairbnb.com/get-the-data.html)<br>
+AirBnB-subway_entrance geojson data : Go on website [overpass-turbo.eu](http://overpass-turbo.eu/) and type : 
+```
+/*
+This is the Overpass query to get the Subway Entrance of Berlin.
+*/
+node
+  [railway=subway_entrance]
+  ({{bbox}});
+out;
+```
+
+
 **Context:**
 
 ><i> Since 2008, guests and hosts have used Airbnb to expand on traveling possibilities and present more unique, personalized way of experiencing the world. This dataset describes the listing activity and metrics in Berlin from 2015 to 2019.</i>
