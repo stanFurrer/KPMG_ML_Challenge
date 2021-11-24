@@ -250,12 +250,12 @@ We select tree baseline model and tree tree-based model with an increasing level
 </p>
 
 **Obervation** : 
-> * For Random Forest and Decision Tree the distance to KPMG is the most impactfull parameters in the decision making. Indeed, as discused KPMG is more or less in the center of berlin. It is one of the places where there is the most AirBnB rental. Selecting KPMG as the center of interest is definitly not the best choice (we made it as a toy exemple) however it seems to be a relevant information
+> * For Random Forest and Decision Tree the distance to KPMG is the most impactful parameters in the decision making. Indeed, as discused KPMG is more or less in the center of berlin. It is one of the places where there is the most AirBnB rental. Selecting KPMG as the center of interest is definitly not the best choice (we made it as a toy exemple) however it seems to be a relevant information
 > * In fact the distance to KPMG leak the real position of the rental and therefore the model "short-cut" is learning process as it learn to match the relative distance to KPMG to a given neighbours.  
 > * However, even if the model would perfectly fit the relation between the distance to KPMG and the area of Berlin it won't be enough as we would have to consider the radious of the distance. This might be the reason why the distance to KPMG is not the only features in the decision making.
 > * The three next most important features are the price, the review and the accomodates.
-> * As expected the month, year and type of room haven't so much influance as they are similarly distributed in each area. They are not relevant to make a distinction.
-> 
+> * As expected the month, year and type of room haven't so much influence as they are similarly distributed in each area. They are not relevant to make a distinction.
+> * The biggest difference between the models is that XGBoosting decision is mostly impacted by the number of bedrooms and the features importance is more distributed than RandomForest and Decision Tree.
 
 
 ---
