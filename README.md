@@ -2,6 +2,10 @@
   <img src="Images/Berlin_KPMG.png"   Width="500"></center>
 </p>
 
+**Authors:** Stanislas Furrer 
+
+**Date :** 24.11.2021
+
 # Part1. Know the facts with descriptive analytics.
 ---
 
