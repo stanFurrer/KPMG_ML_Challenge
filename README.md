@@ -188,7 +188,7 @@ Categorical variables are naturally disadvantaged in this case and have only a f
 
 **Part5. Performance Metric**
 
-To evaluate the model performance we will use the NDCG score, the accuracy and the f1 score. 
+To evaluate the model performance we will use the NDCG score, f1 score and the accuracy. 
 
 **NDCG**
 >- NDCG stands for ***Normalized Discounted Cumulative Gain.***
@@ -201,10 +201,31 @@ To evaluate the model performance we will use the NDCG score, the accuracy and t
   <img src="Images/NDCG.png"   Width="300"></center>
 </p>
 
->-The normalized discounted cumulative gain is the DCG with a normalization factor in the denominator. The denominator is the ideal DCG score when we recommend the most relevant items first. 
+> - The normalized discounted cumulative gain is the DCG with a normalization factor in the denominator. The denominator is the ideal DCG score when we recommend the most relevant items first. 
 <p align="center">
   <img src="Images/NDCG_2.png"   Width="300"></center>
 </p>
+
+**F1-score** : 
+> - The F1 score is defined as the harmonic mean of precision and recall.
+> - As a short reminder, the harmonic mean is an alternative metric for the more common arithmetic mean. It is often useful when computing an average rate.
+> - In the F1 score, we compute the average of precision and recall. They are both rates, which makes it a logical choice to use the harmonic mean. 
+> - The F1-score is an excellent metric for un-balanced classes. It makes it well suits for our task. 
+> The F1 score formula is shown here:
+
+<p align="center">
+  <img src="https://inside-machinelearning.com/wp-content/uploads/2021/09/F1-Score.png"  Width="200"></center>
+</p>
+
+**Accuracy** :
+> - It is the most standard metric for evaluating the model performance. 
+> - However, it is not well suited in our context as we have unbalanced classes.
+> - We will use it as an informative metric rather than a metric to optimize. 
+
+<p align="center">
+  <img src="Images/accuracy.png"   Width="300"></center>
+</p>
+
 
 <h2 id="Modeling">B. Modeling</h3> 
 
@@ -226,15 +247,6 @@ In this section we will try to understand how we might improve our recommender s
 **F1 score Analysis**
 
 The classes (neighbours) are highly imbalanced. Alghough the tree based algorithm are well suited to handle un-blanced dataset we might reduce this effect. In our previous analysis we show that the farrer a neighbours is from the Center of Berlin the less sample we have. In the following we plot the f1 score iin function of the distance of KPMG and vizualize for each area of Berlin. We use the f1 score as it is a well suited performance metric for unbalanced Dataset. 
-
-**F1-score** : 
-> The F1 score is defined as the harmonic mean of precision and recall.
-> As a short reminder, the harmonic mean is an alternative metric for the more common arithmetic mean. It is often useful when computing an average rate.
-> In the F1 score, we compute the average of precision and recall. They are both rates, which makes it a logical choice to use the harmonic mean. The F1 score formula is shown here:
-
-<p align="center">
-  <img src="https://inside-machinelearning.com/wp-content/uploads/2021/09/F1-Score.png"  Width="200"></center>
-</p>
 
 <p align="center">
   <img src="Images/f1_score.png"   Width="650"></center>
