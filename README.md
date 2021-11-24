@@ -299,7 +299,7 @@ However, we will still compute the price-log scale in order to make statistical 
 
 
 <p align="center">
-  <img src="https://cdn-images-1.medium.com/max/1600/1*nj-Ch3AUFmkd0JUSOW_bTQ.jpeg"   Width="800" >
+  <img src="https://cdn-images-1.medium.com/max/1600/1*nj-Ch3AUFmkd0JUSOW_bTQ.jpeg"   Width="500" >
 </p>
 
 
@@ -315,7 +315,7 @@ According to Wikipedia,
 
 
 <p align="center">
-  <img src="https://i2.wp.com/mvpprograms.com/help/images/KurtosisPict.jpg?resize=375%2C234"   Width="800" >
+  <img src="https://i2.wp.com/mvpprograms.com/help/images/KurtosisPict.jpg?resize=375%2C234"   Width="450" >
 </p>
 
 You can read more about this from [this](https://codeburst.io/2-important-statistics-terms-you-need-to-know-in-data-science-skewness-and-kurtosis-388fef94eeaa) article. 
