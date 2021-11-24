@@ -155,7 +155,7 @@ The classes (neighbours) are highly imbalanced. Alghough the tree based algorith
 </p>
 
 <p align="center">
-  <img src="Images/f1_score.png"   Width="500"></center>
+  <img src="Images/f1_score.png"   Width="650"></center>
 </p>
 
 
