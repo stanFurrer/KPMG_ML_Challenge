@@ -146,7 +146,28 @@ In this section we will present our model candidate for the recommender tasks. S
 
 <h2 id="Preprocessing-id">A. Preprocessing</h3>
 
+**Part1. Remove Features and Binning**
+> Some Features are not relevant for the predictive task and might even hurt or biased the model as it will increased significantly the number of parameters. We will also bine some features in order to deal with outliers in the case of bedrooms and accomodates.
 
+> - We will remove : ['geometry','room_id','host_id',"latitude","longitude","last_modified","price","neighbourhood_group"]. We would have keep the host_id if we would have more information about the host as it might influence the decision.
+> - We will bine the number of bedrooms and accomodates into 6 class [1,2,3,4,5,>5]. It is recommended in order to avoid very rare booking
+
+**Part2. Encoding**
+> - We will convert "room_type","overall_satisfaction","accommodates","bedrooms","year","month" into Categorical Data. **I tried with and without converting into categorical and the performance seems better when converting into category**
+> - We will make use of the function get_dummies from pandas. The dummy coding scheme is similar to the one hot encoding scheme, except in the case of dummy coding scheme, when applied on a categorical feature with m distinct labels, we get m-1 binary features. Thus each value of the categorical variable gets converted into a vector of size m-1. The extra feature is completely disregarded and thus if the category values range from {0, 1, ..., m-1} the 0th or the m-1th feature is usually represented by a vector of all zeros (0).
+
+**Part3. Scalling**
+
+> I tried scalling both price and distance to KPMG with sklearn's StandardScaler() however **it hurt the performance** of three based algorithm while improving the performance of logistic regression and KNN. 
+> It is expected for logistic regression and KNN but we are looking to optimize the best performance. **Therefore I wont scale the Price and distance to KPMG**
+
+**Part4. Stratisfied klfold Cross-Validation**
+
+>**Kfold Cross Validation**: divide the data into folds and ensure that each fold is used as a testing set at some point. 
+
+<img src="https://miro.medium.com/proxy/1*E1e-8OmoqJaSmHxxPXcPGg.png" alt="" width="300" height="200" class="aligncenter size-full wp-image-13940" />
+
+>**StatifiedKfold** : In classification and regression, the target distribution must be preserved even after the data is split into multiple sets. More specifically, a binary target with 30 to 70 class ratios should still hold the same ratios in both the training and test sets.
 
 <h2 id="Modeling">B. Modeling</h3> 
 
