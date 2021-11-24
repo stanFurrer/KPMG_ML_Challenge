@@ -141,7 +141,7 @@ C. [Conclusion and Future work](#Conclusion)<br>
 In this section we will present our model candidate for the recommender tasks. Specifically : 
 
 > - We present a set of model candidat, the performance metrics and some preprocessing made. We will use as baseline model Logistic Regression and Naive Bayes. We will compare their performance with tree based algorithm as they have the nice properties to handle unbalanced dataset and outliers. We will look at a standard decision tree classifier as well as ensembling of tree with RandomForest and XGboosting. Ensembling have several advantage over regular model as they reduce the variance of the decision by some type of hierachical voting.  
-> - We will then analyse the features importance in the decision making. As we might expect, the price,review and the distances to KPMG are the mmost important features in the decision process. In fact, for humans, this parameters would also be our key variable for making our decision of renting an AirBnB accomodations.
+> - We will then analyse the features importance in the decision making. As we might expect, the price, the number of reviews and the distances to KPMG are the most important features in the decision process. In fact, for humans, this parameters would also be our key variable for making our decision of renting an AirBnB accomodations.
 > - Finally, we will inspect the evaluation metric and relate them to each area of Berlin. 
 
 <h2 id="Preprocessing-id">A. Preprocessing</h3>
