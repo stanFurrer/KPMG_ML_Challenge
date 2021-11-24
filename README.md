@@ -257,7 +257,7 @@ C. [Conclusion and Future work](#Conclusion)<br>
 
 **Obervation** : 
 > * The imputation based on predictors match the original distributions
-> * We remove the Minstay night features as it is missing in the all testing dataset. We could have use the [insideairbnb](http://insideairbnb.com/) dataset to found matching paterns. 
+> * We remove the Minstay night feature as it is missing in the all testing dataset. We could have use the [insideairbnb](http://insideairbnb.com/) dataset to found matching paterns. 
 > * We fix the case where the number of bed is egal to zero as it might be an error. We use predictors to get accurate results.
 
 
