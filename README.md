@@ -41,15 +41,14 @@
  ---
 # Project Description
 
-@@asdv@@
-
 **Story :** 
 > It’s March 2017. Rob, a (fictional?) KPMG employee living in Berlin, is very fond of his privacy – he lives moving in and out Airbnb’s and never shares his current address. He would like to invite a few D&A colleagues at his place for a dinner evening and decides to share the key features of his current rental: price, room_type, accommodates, bedrooms, bathrooms (see here for more information and to download historical Airbnb data). **The D&A team needs to figure out where Rob is most likely living.** The task is therefore to create a model that, given a set of room features, for a set of coordinates (latitude, longitude), **calculates a score that quantifies how likely it is that Rob is living at the given latitude-longitude.**
 
 **Solution :**
 > - <i>About the Task</i> :  Given that Rob is sharing the curent features of rental and we have access to the past activity of all users will use a **Classification Algorithm** to predict is current **locations.**
-> - <i>About the **location**</i> :  We don't want to be too intrusive in the life of Rob, therefore we will scale the location classification at the 96 borought 
-> - <i>About the Score</> : 
+> - <i>About the **location**</i> :  We don't want to be too intrusive in the life of Rob, therefore we will **scale the location classification** at the 96 borought of Berlin (see [here](https://en.wikipedia.org/wiki/Boroughs_and_neighborhoods_of_Berlin))
+> - <i>About the Score</> : We will quantify the likelihood of Rob living in each of the 96 borought of Berlin with the predictive score output by our trained classifier. We will futher tailored our solution by assuming Rob want to live close to KPMG headquarters. Indeed the trafic in Berlin is very dense. He don't want to take too much time to go to work. Therefore we proposed a finetune solution with the constraint that the Airbnb rental have to be at less than 5kilometers from KPMG headquarter. (Precisly this one : Heidestraße 58, 10557 Berlin, Germany)
+
 **Plan :**
 
  > In this project, we will perform a <b>descriptive</b> and <b>exploratory</b> analysis of the data, in order to understand how the phenomena of each variable behave individually and transversely, in addition to generate <b>hypotheses</b> useful for the <b>decision-making </b> part. <b>In the predictive analytics</b> part we will present <font color = "red"><b>our task  to build a model that predicts where Rob, working at KPMG, will make his Airbnb reservation in 2017.</b></font> We will present a set of model candidate for this classification task and study their performance based on the <b>NDCG score</b> and other standard performance metric. We will look at the importance of the features in the decision making and relate the f1-score to each Berlin area with emphasis on the number of reservation per area. Finally, we will present a <b>prescriptive analysis</b> where we will do futher assumptions based on the Data in order to fine-grained our model score.    
