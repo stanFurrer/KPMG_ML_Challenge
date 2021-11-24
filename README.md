@@ -357,11 +357,53 @@ We will use the Inter Quartile Range(IQR) to detect the outliers. IQR tells us t
 
 <h2 id="bivariate">E. Bivariate Analysis</h2>
 
+Being the most important part, bivariate analysis tries to find the relationship between two variables. We will look for correlation or association between our predictor and target variables. Bivariate analysis is performed for any combination of categorical and numerical variables. The combination can be: Numerical & Numerical, Numerical & Categorical and Categorical & Categorical. Different methods are used to tackle these combinations during analysis process. The methods are:
 
+1. Numerical & Numerical: Pearson's correlation, or Spearman correlation (the later doesn't require normal distribution).
+2. Numerical & Categorical: Point biserial correlation (only if categorical variable is binary type), or ANOVA test. For this problem, we will use biserial correlation
+3. Categorical & Categorical: We would use Chi-square test for bivariate analysis between categorical variables.
 
+- **Note** : 
+ > - Sometime the anaylsis need to be done with unique Room in order to not be biased in the Analsis
 
+### Theoretical Reminder
 
+**Pearson's r :** **Numerical-Numerical** and **Categorical-Numerical**
 
+The correlation matrix is identical to a covariance matrix computed from standardized data. The correlation matrix is a square matrix that contains the Pearson product-moment correlation coefficients (often abbreviated as [Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)), which measure the linear dependence between pairs of features:
+![image](https://wikimedia.org/api/rest_v1/media/math/render/svg/602e9087d7a3c4de443b86c734d7434ae12890bc)
+Pearson's correlation coefficient can simply be calculated as the covariance between two features x and y (numerator) divided by the product of their standard deviations (denominator):
+![image](https://wikimedia.org/api/rest_v1/media/math/render/svg/f76ccfa7c2ed7f5b085115086107bbe25d329cec)
+The covariance between standardized features is in fact equal to their linear correlation coefficient.
+Use NumPy's corrcoef and seaborn's heatmap functions to plot the correlation matrix array as a heat map.
+
+**Chi-squared tests :** **Categorical-Categorical**
+
+Chi-squared tests are based on the so-called chi-squared statistic. You calculate the chi-squared statistic with the following formula:
+
+$$ sum(\frac{(observed-expected)^2}{expected}) $$
+
+The Chi-square test of independence tests if there is a significant relationship between two categorical variables.The data is usually displayed in a cross-tabulation format with each row representing a category for one variable and each column representing a category for another variable.
+
+**The H0 (Null Hypothesis): There is no relationship between variable 1 and variable 2.**
+
+**The H1 (Alternative Hypothesis): There is a relationship between variable 1 and variable 2.**
+
+If the p-value is significant (less than 0.05), you can reject the null hypothesis and claim that the findings support the alternate hypothesis. While we check the results of the chi2 test, we need also to check that the expected cell frequencies are greater than or equal to 5. If a cell has an expected frequency less that 5, then the Fisher’s Exact test should be use to overcome this problem.
+
+<p align="center">
+  <img src="Images/correlation.png"   Width="1300" >
+</p>
+
+**Obervation** : 
+The most interesting information : 
+> - **PLEASE NOTE:** All the probabilistic result are in the notebook. I need to verify my implementation of the p-values. Sorry I might have done a typo
+> - The type of room is correlated to the price. Indeed, home and flat are more expensive than a shared room.
+> - The price increase when the number of bedrooms/accommodates increase. The variance increase also as we have fewer samples. It is the effect of the outliers.
+> - There is no significant correlation between the price and the date. It is a prevered result since we are doing classification and not forecasting.
+> - The hypothesis that the year or the month might influence the choise of room type is **Rejected** by the Chi-Square test 
+> - The hypothesis that the year or the month might influence the number of bedrooms  is **Rejected** by the Chi-Square test 
+> - The hypothesis that the year or the month might influence the choice of neighbourhood is **Rejected** by the Chi-Square test 
 
 <h2 id="multivariate">F. Multivariate Analysis</h2>
 
