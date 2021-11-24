@@ -230,6 +230,18 @@ To evaluate the model performance we will use the NDCG score, f1 score and the a
 
 We select tree baseline model and tree tree-based model with an increasing level of complexity. 
 
+**Multinominal Logistic Regression** : 
+> * Logistic regression uses functions called the logit functions,that helps derive a relationship between the dependent variable and independent variables by predicting the probabilities or chances of occurrence. It is the go-to technique for classification. **However** it as a lot of assumption and we haven't process our data to match them. (minimal or no multi-collinearity, independent variables that linearly related to log of odds, a large sample in each classes, removing outliers as it introduce autocorrelation...)
+
+**KNN** : 
+> * KNN predict the correct class for the test data by calculating the distance between the test data and all the training points. Then select the K number of points which is closet to the test data. The KNN algorithm calculates the probability of the test data belonging to the classes of ‘K’ training data and class holds the highest probability will be selected. In the case of regression, the value is the mean of the ‘K’ selected training points. **However** it's performance hhighly depend on the choise of K, is weak against outlier and might be computationally intence
+
+**Naives Bayes** : 
+> * Naives Bayes use the Bayes theorem. We wanted to verify if knowing some priors and evidence would be enough to make a good recommender. **However** it assume independence between the features. 
+
+**Decision tree and Boosting** : 
+> * Decision tree, Random Forest and XGBoosting are tree based classifier. It is rule based classifier with great interpretability and that handle the outliers and skewed distribution very well. Random Forest and XGBoosting have futher advantage as they are ensembling of tree classifier. Specifically, it is boosting technique that reduce the variance of the decision by acting as a regularizer. Additionally, boosting has the advantage to handle specifically well the outliers by design. In boosting technique each iteration aims at reinforcing the weight of missclassified samples. Due to time constrain we won't enter into more details 
+
 > **PLEASE NOTE**: We have organize our data wrangling and data processing in order to optimize the performance of the tree based algorithm. The choices that have been made are expect to hurt significantly the performance of the baseline models. Indeed, we haven't **remove the outliers** in review and price, we haven't **fix the skewedness of the price throught a logarithm scaling and a box-cox treatment**, we haven't **binned some parameters**, we haven't **one hot encode all the categorical parameters** and we haven't **Standardize any parameters**. **HOWEVER** the code to processed any of the aforedmentioned processing is include in the notebook. 
 
 <p align="center">
