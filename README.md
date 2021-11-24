@@ -380,9 +380,17 @@ Being the most important part, bivariate analysis tries to find the relationship
 **Pearson's r :** **Numerical-Numerical** and **Categorical-Numerical**
 
 The correlation matrix is identical to a covariance matrix computed from standardized data. The correlation matrix is a square matrix that contains the Pearson product-moment correlation coefficients (often abbreviated as [Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)), which measure the linear dependence between pairs of features:
-![image](https://wikimedia.org/api/rest_v1/media/math/render/svg/602e9087d7a3c4de443b86c734d7434ae12890bc)
+
+<p align="center">
+  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/602e9087d7a3c4de443b86c734d7434ae12890bc">
+</p>
+
 Pearson's correlation coefficient can simply be calculated as the covariance between two features x and y (numerator) divided by the product of their standard deviations (denominator):
-![image](https://wikimedia.org/api/rest_v1/media/math/render/svg/f76ccfa7c2ed7f5b085115086107bbe25d329cec)
+
+<p align="center">
+  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f76ccfa7c2ed7f5b085115086107bbe25d329cec">
+</p>
+
 The covariance between standardized features is in fact equal to their linear correlation coefficient.
 Use NumPy's corrcoef and seaborn's heatmap functions to plot the correlation matrix array as a heat map.
 
@@ -390,7 +398,9 @@ Use NumPy's corrcoef and seaborn's heatmap functions to plot the correlation mat
 
 Chi-squared tests are based on the so-called chi-squared statistic. You calculate the chi-squared statistic with the following formula:
 
-$$ sum(\frac{(observed-expected)^2}{expected}) $$
+<p align="center">
+  <img src="Images/chi_square.png" Width="400">
+</p>
 
 The Chi-square test of independence tests if there is a significant relationship between two categorical variables.The data is usually displayed in a cross-tabulation format with each row representing a category for one variable and each column representing a category for another variable.
 
