@@ -133,5 +133,38 @@ C. [Conclusion and Future work](#Conclusion)<br>
 # 3. Prescriptive Analytics
 <h2 id="Preprocessing-id">A. Result Analysis</h3>
 <h2 id="fine">B. Fine-Tuning</h3> 
+
+
+
 <h2 id="Conclusion">C. Conclusion and Future work</h3> 
 
+In this project, we have presented a data-driven approach to predict the future location of Airbnb bookings in Berlin. Specifically, we offer a probabilistic approach to quantify the area of Berlin where the users in 2017 will most probably make a reservation.
+
+In order to solve this task, we had to proceed into data cleaning through missing input imputation and a wide range of data analyses. We then select a set of model candidates for the classification task. We analyze the performance of each model based on the NDCG score and other performance metrics (accuracy,f1-score, recall, precision). We analyze the importance of the features and present a probabilistic score for each area of Berlin. We try to understand the misclassification through the lens of the f1-score per area, emphasizing the number of occurrences of each class. Finally, we proposed a fine-grained approach that focused on a user working at KPMG Berlin who wants not to be farther than 5 kilometers from Berlin.
+
+Our best recommender system on the fine-grained contraint (less than 5km from KPMG) obtain a **NDCG_score** = 0.887 and an **accuracy** = 80%  on the test set. The test set is all the Aibnb reservations made in 2017.
+
+**Improvement and Future Work**
+
+In all data Science projects, it is paramount to understand and work around the tradeoff between "the level of detail and the time requirement." Indeed, the priority is to match the company or consumer deadline with the highest output quality possible. However, it is always possible to improve the data quality, the model performance or make better visualization. This project had to be implemented in less than five days. We prioritize the overall structure with a strong emphasis on justifying our choices. 
+
+The recommender system we built is biased by our assumption that every user is interested in being as close as possible to KPMG. This hypothesis has been made to match our scoring target per area where Rob working at KPMG might book his next flat. 
+
+In the following, we propose a list of potential improvements. We believe the performance might be significantly improved if we include more parameters. The following might be considered as Data-centric improvement of the pipeline : 
+
+**Data Centric :**
+> * The distances to bus or railway station might be significant in the user's choise. [Here](https://medium.com/@brendan_ward/how-to-leverage-geopandas-for-faster-snapping-of-points-to-lines-6113c94e59aa) is an implementation for computin the shortest distance to subway given a data point.
+> * The Access to restaurants, shops, cafes, bars and pubs are important for Airbnb users.
+> * We removed the Host Id info : However if we would have past info about the host then it would propably influence the result
+> * Having access to the review comment might be usefull. We could compute a sentiment score with a BERT model finetuned for emotion classification.  
+> * We could also include image quality as a feature. Shunyuan et al. 2017 [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2976021), have shown that Airbnb property demand changed after the acquisition of verified images (taken by Airbnb’s photographers). 
+
+**Lessons Learned**
+
+1. Great opportunity to work with geographic data and to connect them to the model performance.
+2. There is a tone of geographic information about transport and market for every city online and it is very intuitive to collect and work with them.
+
+
+And that’s all. **This was a very fun project to work with.**
+
+If you somehow managed to go through the whole thing and are reading this, thank you for your time! Any feedback is much appreciated.
