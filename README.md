@@ -266,8 +266,14 @@ C. [Conclusion and Future work](#Conclusion)<br>
 </p>
 
 
+<p align="center">
+  <img src="Images/more.png"   Width="600" >
+</p>
+
 **Obervation** : 
 > * The over all satisfaction is either very good (4.5-5) or very bad
+> * The majority of the room Type are either Private room or Entire home/apt.
+> * Some Area of berlin are highly populated in terme of listening
 > * The number of Bedrooms is mostly between 1 and 3 and the number of accommodates between 1 and 4
 > * Latitude and Longitude present the characteristics of Berlin
 > * The price and review distribution seems to follow logarithmic curves. We will futher analysis their characteristics in the next sections.
@@ -350,6 +356,12 @@ We will use the Inter Quartile Range(IQR) to detect the outliers. IQR tells us t
 > * We will keep the outliers in the rest of the project as they are most probably linked to the situation where we have a ot of bedrooms or accomodation.
 
 <h2 id="bivariate">E. Bivariate Analysis</h2>
+
+
+
+
+
+
 
 <h2 id="multivariate">F. Multivariate Analysis</h2>
 
