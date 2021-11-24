@@ -61,7 +61,7 @@
 
 table_KPMG1.png
 <p align="center">
-  <img src="table_KPMG1.png"   Width="500"></center>
+  <img src="Images/table_KPMG1.png"   Width="200"></center>
 </p>
 
 <p align="center">
