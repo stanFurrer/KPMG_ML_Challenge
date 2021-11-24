@@ -569,7 +569,7 @@ We select tree baseline model and tree tree-based model with an increasing level
 **Obervation** : 
 > * As expected the tree based algorithm have better performance than the baselines. Indeed, we have optimize for tree-based algorithm and the baseline have a lot assumptions that we do not met. 
 > * Our best model is Random Forest and it's recommender score is very good.
-> * The highest likelihood score where Rob might be renting is flat are near KPMG headcarters
+> * The highest likelihood score where Rob might be renting his flat are near KPMG headcarters
 
 > Next we analyse the importance of the features in the decision making of the tree-based classifier. 
 
