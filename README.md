@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Images/Berlin_KPMG.png"   Width="500"></center>
+  <img src="Images/KPMG.png"   Width="500"></center>
 </p>
 
 **Authors:** Stanislas Furrer 
