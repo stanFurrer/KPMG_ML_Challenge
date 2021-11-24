@@ -148,10 +148,9 @@ The classes (neighbours) are highly imbalanced. Alghough the tree based algorith
 > The F1 score is defined as the harmonic mean of precision and recall.
 > As a short reminder, the harmonic mean is an alternative metric for the more common arithmetic mean. It is often useful when computing an average rate.
 > In the F1 score, we compute the average of precision and recall. They are both rates, which makes it a logical choice to use the harmonic mean. The F1 score formula is shown here:
-> This makes that the formula for the F1 score is the following:
 
 <p align="center">
-  <img src="https://inside-machinelearning.com/wp-content/uploads/2021/09/F1-Score.png"></center>
+  <img src="https://inside-machinelearning.com/wp-content/uploads/2021/09/F1-Score.png"  Width="200"></center>
 </p>
 
 <h2 id="fine">B. Fine-Tuning</h3> 
