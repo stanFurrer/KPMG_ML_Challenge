@@ -146,11 +146,15 @@ In this section we will present our model candidate for the recommender tasks. S
 
 <h2 id="Preprocessing-id">A. Preprocessing</h3>
 
-**Part1. Remove Features and Binning**
-> Some Features are not relevant for the predictive task and might even hurt or biased the model as it will increased significantly the number of parameters. We will also bine some features in order to deal with outliers in the case of bedrooms and accomodates.
+**Part1. Remove Features**
+> - Some Features are not relevant for the predictive task and might even hurt or biased the model as it will increased significantly the number of parameters.
 
 > - We will remove : ['geometry','room_id','host_id',"latitude","longitude","last_modified","price","neighbourhood_group"]. We would have keep the host_id if we would have more information about the host as it might influence the decision.
-> - We will bine the number of bedrooms and accomodates into 6 class [1,2,3,4,5,>5]. It is recommended in order to avoid very rare booking
+
+> - **IMPORTANT Note**: I try bining bedrooms and accomodates into 6 class [1,2,3,4,5,>5]. It increase the performance of the baseline model while deacrease the performance of the tree based model. The tree based algorithm are robust to outlier where the baseline aren't. Therefore for the tree based classifier binning will remove some important information while for the baseline classifier it will reduce the impact of the outliers 
+> 
+> 
+> We will bine the number of bedrooms and accomodates into 6 class [1,2,3,4,5,>5]. It is recommended in order to avoid very rare booking
 
 **Part2. Encoding**
 > - We will convert "room_type","overall_satisfaction","accommodates","bedrooms","year","month" into Categorical Data. **I tried with and without converting into categorical and the performance seems better when converting into category**
