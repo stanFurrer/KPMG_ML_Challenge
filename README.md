@@ -373,7 +373,7 @@ Being the most important part, bivariate analysis tries to find the relationship
 3. Categorical & Categorical: We would use Chi-square test for bivariate analysis between categorical variables.
 
 - **Note** : 
- > - Sometime the anaylsis need to be done with unique Room in order to not be biased in the Analsis
+ > - Sometime the anaylsis need to be done with unique Room in order to not be biased in the Analysis
 
 ### Theoretical Reminder
 
