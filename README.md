@@ -372,9 +372,10 @@ The most interesting information :
 
 **Obervation** : 
 The most interesting information : 
-> * The number of bedrooms and accommodates are correlated with the price. Indeed, if we have more room we expect to have a higher price.
-> * The month and years have no correlation with the price, the overall satisfaction, the bedrooms and the review. We could have use a forecasting approach to solve the problem. However, since there is no linear relation between the parameters and the date classification is a better approach. 
-
+> * The AirBnB rantal have a higher density in the center of Berlin and Around the KPMG headquarter
+> * We will select the distance to KPMG as a features for or recommender system. Idealy we would have set the center of interest in the most visited place of Berlin or it's center. We select KPMG just as a toy exemple. However, it is located in an area with a lot of Airbnb Rental. Although it is not the ideal decision, it is more entertaining. 
+> * The price is slightly higher in the center of berlin. However, there is no statistically significance correlation between the price per night and the distance to KPMG.
+> * We have add the subway entrance on the map. In a future work it would be a great features to strengh our recommender. For more discussion about it, please refer to the conclusion. 
 
 ---
 # 2. Predictive Analytics
