@@ -8,11 +8,10 @@
 
 **Requirements** : (Need to run the notebook package before doing step 3)
 ```
-
 (base) conda creat --name KPMG python=3.8
 (KPMG) pip install requirements.txt
 (KPMG) pip install descartes```
-
+```
 
 # Part1. Know the facts with descriptive analytics.
 ---
