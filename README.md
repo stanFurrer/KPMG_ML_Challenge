@@ -55,13 +55,20 @@
  
 > The whole analysis will follow a simple and direct structure, well detailed in all topics, aiming at the same time, to create an intuitive and simple <b> guide </b> of which steps must be followed to carry out a good analysis, to in order to understand the data involved in any study. The data consistency is paramout. We  connected it to synergetic complex models and we interpret the result. 
 
+| Top 3 Models             | NDCG_score_test           | Accuracy_score_test  |
+| -------------          |:-------------:| -----: |
+| **Random Forest**      | 0.871         | 0.789  |
+| **Decision Tree**      | 0.803         | 0.801  |
+| **XGboosting**         | 0.766         | 0.596  |
+
+
  **Results:**
  
  >**Model Performance Evaluation :** <font color = "red"><b>All Berlin</b></font> **(Standard Solution)**
 
 table_KPMG1.png
 <p align="center">
-  <img src="Images/table_KPMG1.png"   Width="200"></center>
+  <img src="Images/table_KPMG1.png" ></center>
 </p>
 
 <p align="center">
