@@ -58,7 +58,7 @@
  **Results:**
  
 <p align="center">
-  <img src="Images/table_KPMG.png Width="400"" ></center>
+  <img src="Images/table_KPMG.png" Width="400" ></center>
 </p>
 
  >**Model Performance Evaluation :** All Berlin **(Standard Solution)**
@@ -73,7 +73,7 @@
 <p align="center">
   <img src="Images/Score1.png"   Width="500"></center>
 </p>
-
+<!---
 | Top 5 Areas                    | Predictive Score          
 | -------------                 |:-------------:|
 | **Tempelhofer Vorstadt**      | 6.299         | 
@@ -81,21 +81,21 @@
 | **Alexanderplatz**            | 4.965         | 
 | **Reuterstraße**              | 4.210         | 
 | **Rixdorf**                   | 3.994         | 
-
+-->
  
  
   >**Model Performance Evaluation :** Berlin 5 kilometer around KPMG **(Fine-Tuned Solution)**
-
+<!---
 | Top 3 Models                  | NDCG_score_test           | Accuracy_score_test  |
 | -------------          |:-------------:| -----:|
 | **Random Forest**      | 0.886      | 0.8099 |
 | **Decision Tree**      | 0.808      | 0.6532 |
 | **XGboosting**         | 0.804      | 0.7997|
- 
+-->
 <p align="center">
   <img src="Images/Score_5km_Fine_grained.png"   Width="500"></center>
 </p> 
- 
+<!---
 | Top 5 Areas                   | Predictive Score          
 | -------------                 |:-------------:|
 | **Alexanderplatz**            | 9.923         | 
@@ -103,7 +103,7 @@
 | **Brunnenstr. Süd**           | 7.353         | 
 | **Prenzlauer Berg Südwest**   | 6.456         | 
 | **Prenzlauer Berg Nordwest**  | 6.025         | 
-
+-->
  ---
 # Outline
 
