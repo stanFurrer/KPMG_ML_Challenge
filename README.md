@@ -178,13 +178,16 @@ Categorical variables are naturally disadvantaged in this case and have only a f
 
 **Part4. Stratisfied klfold Cross-Validation**
 
->**Kfold Cross Validation**: divide the data into folds and ensure that each fold is used as a testing set at some point. 
+>**Kfold Cross Validation**: divide the data into folds and ensure that each fold is used as a testing set at some point. It is a regularization technique that reduce the variance of the decision and the overfitting.
 
 <p align="center">
 <img src="https://miro.medium.com/proxy/1*E1e-8OmoqJaSmHxxPXcPGg.png" alt="" width="300" height="200" class="aligncenter size-full wp-image-13940" />
 </p> 
 
->**StatifiedKfold** : In classification and regression, the target distribution must be preserved even after the data is split into multiple sets. More specifically, a binary target with 30 to 70 class ratios should still hold the same ratios in both the training and test sets.
+>**StatifiedKfold** : Stratification is the process of rearranging the data as to ensure each fold is a good representative of the whole. For example in a binary classification problem where each class comprises 50% of the data, it is best to arrange the data such that in every fold, each class comprises around half the instances. It ensure to keep the same class distribution in each fold. In our case, we have a strong un-balanced situation, therefore this methods is essential.
+
+**Part5. Performance Metric**
+
 
 <h2 id="Modeling">B. Modeling</h3> 
 
