@@ -135,12 +135,24 @@ C. [Conclusion and Future work](#Conclusion)<br>
 In this section we will try to understand how we might improve our recommender system. 
 
 > - We will examine the misclassification through the lens of the f1-score per area, emphasizing the number of occurrences of each class.
-> - We will make the assumption that Rob wishes to live at most 5km far from KPMG headquarter. From this assumption, we will retraine our model to get better performance on this more specific task.
+> - We will make the assumption that Rob wishes to live at most 5km far from KPMG headquarter. From this assumption, we will retrain our models to get better performance on this specific task.
 > - We observe better performance of our recommender system based on all the metrics.  The main reason for this improvement comes from the better class balance induced by our assumption. Indeed, there is more listening in these areas.
 > - Finally, we will delineate our conclusion and present improvements
 
 <h2 id="result">A. Result Analysis</h3>
 
+**F1 score Analysis**
+The classes (neighbours) are highly imbalanced. Alghough the tree based algorithm are well suited to handle un-blanced dataset we might reduce this effect. In our previous analysis we show that the farrer a neighbours is from the Center of Berlin the less sample we have. In the following we plot the f1 score iin function of the distance of KPMG and vizualize for each area of Berlin. We use the f1 score as it is a well suited performance metric for unbalanced Dataset. 
+
+**F1-score** : 
+> The F1 score is defined as the harmonic mean of precision and recall.
+> As a short reminder, the harmonic mean is an alternative metric for the more common arithmetic mean. It is often useful when computing an average rate.
+> In the F1 score, we compute the average of precision and recall. They are both rates, which makes it a logical choice to use the harmonic mean. The F1 score formula is shown here:
+> This makes that the formula for the F1 score is the following:
+
+<p align="center">
+  <img src="https://inside-machinelearning.com/wp-content/uploads/2021/09/F1-Score.png"></center>
+</p>
 
 <h2 id="fine">B. Fine-Tuning</h3> 
 
