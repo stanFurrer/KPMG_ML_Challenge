@@ -38,10 +38,6 @@
 > ({{bbox}});
 > out;
 > ```
-```
-- text in red
-```
-
  ---
 # Project Description
 
@@ -51,7 +47,7 @@
 **Solution :**
 > [About the Task] Given that Rob is Sharing the curent features of rental and we have access to his past Activity we will use a **Classification Algorithm**.
 > [About the latitude-longitude] Given that Rob is Sharing the curent features of rental and we have access to his past Activity we will use a **Classification Algorithm**.
-> [About the Score]
+> [About the Score]<span style="color:red">cardinals</span>
 **Plan :**
 
  > In this project, we will perform a <b>descriptive</b> and <b>exploratory</b> analysis of the data, in order to understand how the phenomena of each variable behave individually and transversely, in addition to generate <b>hypotheses</b> useful for the <b>decision-making </b> part. <b>In the predictive analytics</b> part we will present <font color = "red"><b>our task  to build a model that predicts where Rob, working at KPMG, will make his Airbnb reservation in 2017.</b></font> We will present a set of model candidate for this classification task and study their performance based on the <b>NDCG score</b> and other standard performance metric. We will look at the importance of the features in the decision making and relate the f1-score to each Berlin area with emphasis on the number of reservation per area. Finally, we will present a <b>prescriptive analysis</b> where we will do futher assumptions based on the Data in order to fine-grained our model score.    
