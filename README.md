@@ -325,7 +325,7 @@ In the following, we propose a list of potential improvements. We believe the pe
 **Data Centric :**
 > * Use tree pruning and Features selection to reduce the Overfitting
 > * Conduct a grid search for hyper parmeter selection. **PLEASE NOTE** We have implemented the code for the grid search, however due to time constrain we haven't run it.
-> * Try Deep Deural Network. Specifically, try a Multi-Layers-Perceptron with as regularization dropout and layer-normalization and as optimizer Adam. (This is my speciality. I have a lot of project where I implemented all sort of Deep Learning Architecture. However, I prioritize the interpretability of the project rather than optimizing the performance.)
+> * Try Deep Deural Network. Specifically, try a Multi-Layers-Perceptron with as regularization dropout and layer-normalization and as optimizer Adam. (This is my speciality. I have a lot of project where I implemented all sort of Deep Learning Architecture([here](https://github.com/stanFurrer/Multimodal-solution-for-grasp-stability-prediction), [here](https://github.com/stanFurrer/Meta-Learner-LSTM-for-Few-Shot-Learning), [here](https://github.com/stanFurrer/A-Comparison-Between-Two-Manifold-Techniques),[here](https://github.com/stanFurrer/Emotion-Analysis-On-Opensubtitle-), [here](https://github.com/stanFurrer/Robust-Multimodal-Contrastive-Learning)... ). However, I prioritize the interpretability of the project rather than optimizing the performance.)
 
 **Lessons Learned**
 
