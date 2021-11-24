@@ -601,7 +601,7 @@ In this section we will try to understand how we might improve our recommender s
 
 **F1 score Analysis**
 
-The classes (neighbours) are highly imbalanced. Alghough the tree based algorithm are well suited to handle un-blanced dataset we might reduce this effect. In our previous analysis we show that the farrer a neighbours is from the Center of Berlin the less sample we have. In the following we plot the f1 score iin function of the distance of KPMG and vizualize for each area of Berlin. We use the f1 score as it is a well suited performance metric for unbalanced Dataset. 
+The classes (neighbours) are highly imbalanced. Alghough the tree based algorithm are well suited to handle un-blanced dataset we might reduce this effect. In our previous analysis we show that the farrer a neighbours is from the Center of Berlin the less sample we have. In the following we plot the f1 score in function of the distance of KPMG and vizualize the F1 score for each area of Berlin. We use the F1 score as it is a well suited performance metric for unbalanced Dataset. 
 
 <p align="center">
   <img src="Images/f1_score.png"   Width="650"></center>
