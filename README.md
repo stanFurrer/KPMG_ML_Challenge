@@ -57,7 +57,7 @@
 
  **Results:**
  
- >**Model Performance Evaluation :** <font color = "red"><b>All Berlin</b></font> **(Standard Solution)**
+ >**Model Performance Evaluation :** All Berlin **(Standard Solution)**
 
 | Top 3 Models             | NDCG_score_test           | Accuracy_score_test  |
 | -------------          |:-------------:| -----: |
@@ -79,7 +79,7 @@
 
  
  
-  >**Model Performance Evaluation :** <font color = "red"><b>All Berlin</b></font> **(Standard Solution)**
+  >**Model Performance Evaluation :** Berlin 5 kilometer around KPMG **(Fine-Tuned Solution)**
 
 | Top 3 Models                  | NDCG_score_test           | Accuracy_score_test  |
 | -------------          |:-------------:| -----:|
