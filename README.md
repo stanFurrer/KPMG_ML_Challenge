@@ -232,8 +232,6 @@ We select tree baseline model and tree tree-based model with an increasing level
 
 > **PLEASE NOTE**: We have organize our data wrangling and data processing in order to optimize the performance of the tree based algorithm. The choices that have been made are expect to hurt significantly the performance of the baseline models. Indeed, we haven't **remove the outliers** in review and price, we haven't **fix the skewedness of the price throught a logarithm scaling and a box-cox treatment**, we haven't **binned some parameters**, we haven't **one hot encode all the categorical parameters** and we haven't **Standardize any parameters**. **HOWEVER** the code to processed any of the aforedmentioned processing is include in the notebook. 
 
-> As expected the tree based algorithm have better performance than the baselines. Indeed, we have optimize for tree-based algorithm and for the baseline that have a lot assumptions to met. Our best model is Random Forest. 
-
 <p align="center">
   <img src="Images/result_score.png"   Width="300"></center>
 </p>
@@ -243,6 +241,8 @@ We select tree baseline model and tree tree-based model with an increasing level
 </p>
 
 **Obervation** : 
+> * As expected the tree based algorithm have better performance than the baselines. Indeed, we have optimize for tree-based algorithm and the baseline have a lot assumptions that we do not met. 
+> * Our best model is Random Forest and it's recommender score is very good.
 > * The highest likelihood score where Rob might be renting is flat are near KPMG headcarters
 
 > Next we analyse the importance of the features in the decision making of the tree-based classifier. 
