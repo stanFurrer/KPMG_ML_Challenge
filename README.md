@@ -188,6 +188,23 @@ Categorical variables are naturally disadvantaged in this case and have only a f
 
 **Part5. Performance Metric**
 
+To evaluate the model performance we will use the NDCG score, the accuracy and the f1 score. 
+
+**NDCG**
+>- NDCG stands for ***Normalized Discounted Cumulative Gain.***
+
+>- To evaluate recommender systems we need to measure how relevant the results are and how good the ordering is.
+
+>- To understand NDCG, we need to understand its predecessors: Cumulative Gain(CG) and Discounted Cumulative Gain(DCG). Also, we need to keep the following assumption in mind: *The highly relevant documents are more useful than moderately relevant documents, which are in turn more useful than irrelevant documents.*
+>- The gain is  the relevance score for each item recommended. The cumulative gain at K is the sum of gains of the first K items recommended. Discounted cumulative gain weighs each relevance score based on its position. The recommendations at the top get a higher weight while the relevance of those at the bottom get a lower weight. 
+<p align="center">
+  <img src="Images/NDCG.png"   Width="300"></center>
+</p>
+
+>-The normalized discounted cumulative gain is the DCG with a normalization factor in the denominator. The denominator is the ideal DCG score when we recommend the most relevant items first. 
+<p align="center">
+  <img src="Images/NDCG_2.png"   Width="300"></center>
+</p>
 
 <h2 id="Modeling">B. Modeling</h3> 
 
