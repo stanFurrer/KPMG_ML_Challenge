@@ -227,7 +227,7 @@ C. [Conclusion and Future work](#Conclusion)<br>
 - **Note :** 
     > In the previous Part we have exclude the column that contain only "Not a Number Value" as they are not   relevant for our predictive tasks. It correspond to the **Deletions** branch in the Graph below
 
-    > Some row have 0 bedrooms. It is most probably wrong, **therefore we will pridict the real number of room based on predictors.**
+    > Some row have 0 bedrooms. It is most probably wrong, **therefore we will predict the real number of room based on predictors.**
 ### Missing Values in training set 
 - **Categorical Data**
     > - [room_type](#missing1) (<font color = "red"><b>0.005%</b></font>). Imputation based on predictors 
