@@ -1,0 +1,13 @@
+jupyter
+tensorflow
+matplotlib
+pandas
+seaborn
+geopandas
+geopy	
+plotly==5.4.0
+missingno
+scikit-learn
+xgboost
+descartes
+
