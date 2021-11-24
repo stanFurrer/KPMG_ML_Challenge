@@ -25,10 +25,10 @@
 
 **Acknowledgements:**
 
-><i> This public dataset is part of Airbnb, and the original source can be found on this <a href="http://tomslee.net/airbnb-data-collection-get-the-data">website</a>.</i>
+><i> This public dataset is part of Airbnb, and the original source can be found on the following Website</i>
 >* AirBnB-Berlin Data : [Data 2015-2018](http://tomslee.net/category/airbnb-data)<br>
- * AirBnB-neighbourhoods geojson data : [neighbourhoods.geojson](http://insideairbnb.com/get-the-data.html)<br>
- * AirBnB-subway_entrance geojson data : Go on website [overpass-turbo.eu](http://overpass-turbo.eu/) and type : 
+>* AirBnB-neighbourhoods geojson data : [neighbourhoods.geojson](http://insideairbnb.com/get-the-data.html)<br>
+>* AirBnB-subway_entrance geojson data : Go on website [overpass-turbo.eu](http://overpass-turbo.eu/) and type : 
 ```
 /*
 This is the Overpass query to get the Subway Entrance of Berlin.
