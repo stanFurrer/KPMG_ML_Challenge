@@ -353,7 +353,14 @@ We will use the Inter Quartile Range(IQR) to detect the outliers. IQR tells us t
 
 <h2 id="multivariate">F. Multivariate Analysis</h2>
 
+<p align="center">
+  <img src="Images/covariance_matrix.png"   Width="800" >
+</p>
 
+**Obervation** : 
+The most interesting information : 
+> * The number of bedrooms and accommodates are correlated with the price. Indeed, if we have more room we expect to have a higher price.
+> * The month and years have no correlation with the price, the overall satisfaction, the bedrooms and the review. We could have use a forecasting approach to solve the problem. However, since there is no linear relation between the parameters and the date classification is a better approach. 
 
 
 <h2 id="geo">G. Geographic Analysis</h2>
