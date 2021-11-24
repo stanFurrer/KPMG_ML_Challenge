@@ -59,13 +59,17 @@
  
  >**Model Performance Evaluation :** <font color = "red"><b>All Berlin</b></font> **(Standard Solution)**
 
-| Model                  | NDCG_score_test           | Accuracy_score_test  |
+| Top 3 Models             | NDCG_score_test           | Accuracy_score_test  |
 | -------------          |:-------------:| -----: |
 | **Random Forest**      | 0.871         | 0.789  |
 | **Decision Tree**      | 0.803         | 0.801  |
 | **XGboosting**         | 0.766         | 0.596  |
 
-| Top 5 Area                    | Predictive Score          
+<p align="center">
+  <img src="Images/Score1.png"   Width="500"></center>
+</p>
+
+| Top 5 Areas                    | Predictive Score          
 | -------------                 |:-------------:|
 | **Tempelhofer Vorstadt**      | 6.299         | 
 | **Frankfurter Allee Süd FK**  | 5.781         |
@@ -76,13 +80,17 @@
  
   >**Model Performance Evaluation :** <font color = "red"><b>All Berlin</b></font> **(Standard Solution)**
 
-| Model                  | NDCG_score_test           | Accuracy_score_test  |
+| Top 3 Models                  | NDCG_score_test           | Accuracy_score_test  |
 | -------------          |:-------------:| -----:|
 | **Random Forest**      | 0.886      | 0.8099 |
 | **Decision Tree**      | 0.808      | 0.6532 |
 | **XGboosting**         | 0.804      | 0.7997|
  
-| Top 5 Area                    | Predictive Score          
+<p align="center">
+  <img src="Images/Score_5km_Fine_grained"   Width="500"></center>
+</p> 
+ 
+| Top 5 Areas                   | Predictive Score          
 | -------------                 |:-------------:|
 | **Alexanderplatz**            | 9.923         | 
 | **Tempelhofer Vorstadt**      | 9.257         |
