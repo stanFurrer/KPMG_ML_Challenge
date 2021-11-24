@@ -136,6 +136,122 @@ C. [Conclusion and Future work](#Conclusion)<br>
 ---
 # 1. Descriptive Analytics
 
+><i> Generally, <b>descriptive analyzes</b> are the first manipulations performed in a <b>quantitative</b> study and their main objective is to summarize and explore the behavior of the data involved in the study. Using statistical techniques such as <b>frequency distribution</b>, <b>measures of central tendency</b> and <b>measures of dispersion</b> we can better understand the way in which the phenomena under study behave.</i>
+
+<h2 id="type">A. Variable Type</h2>
+
+><i> In a <b>quantitative</b> study, it is very important to know what types of data are being studied, because for different types of data different analyzes are performed. The data is divided into two main types: <b>quantitative</b> and <b>qualitative</b>. We can describe them as follows:</i>
+
+**Variáveis Qualitativas**
+
+><i> Qualitative (or categorical) variables are characteristics that cannot be measured numerically, for example: Sex, Gender, Color and education. And they can be <b>nominal</b> or <b>ordinal</b>.</i>
+
+**Variáveis Quantitativas**
+
+><i> The variables classified as quantitative are the characteristics that can be measured on a quantitative scale, that is, they present numerical values that make sense, for example: <b>Height</b>, <b> Mass</b>, <b>Income</b> and <b>Age</b>.</i>
+
+---
+<center><img src = "https://i.stack.imgur.com/3QemG.gif"></center>
+
+**Ratio Testing and Training :** 9% and 91%
+
+* About Training Dataset
+    > - <i>Number of Recorded Activity : **192164**</i>
+    > - <i>Number of Column "Features" : **20**</i>
+* About Testing Dataset
+    > - <i>Number of Recorded Activity : **18999**</i>
+    > - <i>Number of Column "Features" : **20**</i>    
+**Categorical / Qualitative**
+- **Nominal**(variables that have two or more categories, but which do not have an intrinsic order.)
+   > - **room_type**
+            Entire home/apt 
+            Private room
+            Shared room
+   > - **neighborhood** (Berlin is Devided Into 12 different **neighborhood**)
+             Mitte
+             Friedrichshain-Kreuzberg
+             Pankow
+             Charlottenburg-Wilmersdorf
+             Neukölln
+             Marzahn-Hellersdorf
+             Tempelhof-Schöneberg
+             Lichtenberg
+             Treptow-Köpenick
+             Steglitz-Zehlendorf
+             Spandau
+             Reinickendorf
+        
+- **Ordinal**(variables that have two or more categories just like nominal variables. Only the categories can also be ordered or ranked.)
+   > - **None**
+***
+**Numeric / Quantitative**
+- **Discrete** [int]
+  >  - **room_id :** A unique number identifying an Airbnb listing.
+  >  - **host_id :** A unique number identifying an Airbnb host.
+  >  - **overall_satisfaction:** The average rating (out of five) that the listing has received from those visitors who left a review.
+  >  - **accommodates :** The number of guests a listing can accommodate. 
+  >  - **bedrooms :** The number of bedrooms a listing offers. 
+  >  - **minstay :** The minimum stay for a visit, as posted by the host. (Numbers of Nights)
+  >  - **reviews :** The number of reviews that a listing has received
+  
+
+- **Continous** [float]
+    >  - **longitude** 
+    >  - **Latitude**
+    >  - **Price :** The price (in US-Dollar) for a night stay. 
+
+**Other :**
+- **Date**
+    > - **last_modified :** the date and time that the values were read from the Airbnb web site.
+
+***
+
+**Note: Some Columns have only NaNs Values.** 
+
+**Categorical / Qualitative**
+- **Nominal**
+    >  - **location :** It is the country. It will be always Germany. **DISCARED**
+    >  - **name :**  It is the name of the Owner of the Account. **DISCARED**
+    >  - **city :** It is the name of the City. It will be always Berlin. **DISCARED**
+    >  - **country :**  It is the country. It will be always Germany.  **DISCARED**
+
+**Numeric / Quantitative**
+- **Discrete**
+    >  - **borough :** For some cities, there is no borough information. See <a href="http://tomslee.net/airbnb-data-collection-get-the-data">Here</a>.</i> **DISCARED**
+    >  - **survey_id :** Survey Id. Will be useless in the prediction. **DISCARED**
+    >  - **bathrooms :** It is the number of the bathrooms. The information is Missing. **DISCARED**
+
+<h2 id="missing">B. Missing Values Analysis and Treatment</h2>
+
+- **Note :** 
+    > In the previous Part we have exclude the column that contain only "Not a Number Value" as they are not   relevant for our predictive tasks. It correspond to the **Deletions** branch in the Graph below
+
+    > Some row have 0 bedrooms. It is most probably wrong, **therefore we will pridict the real number of room based on predictors.**
+### Missing Values in training set 
+- **Categorical Data**
+    > - [room_type](#missing1) (<font color = "red"><b>0.005%</b></font>). Imputation based on predictors 
+
+- **Numerical Data**
+    > - [Minstay](#missing2) (<font color = "red"><b>40.022%</b></font>). Deletion 
+    > - [Overall_satisfaction](#missing3) (<font color = "red"><b>21.678%</b></font>). Imputation based on predictors
+    > - [Accommodates](#missing4) (<font color = "red"><b>4.952%</b></font>). Imputation based on predictors
+    > - [Bedrooms](#missing5) (<font color = "red"><b>3.546%</b></font>). Imputation based on predictors
+    > - [host_id](#missing6) (<font color = "red"><b>0.005%</b></font>). Imputation based on predictors
+    
+### Missing Values in testing set :
+- **Numerical Data**
+    > - [Minstay](#missing2) (<font color = "red"><b>100.000%</b></font>). Deletion 
+
+<p align="center">
+  <img src="https://imgur.com/68u0dD2.png"   Width="800" >
+</p>
+
+<p align="center">
+  <img src="Images/missing.png"   Width="800" >
+</p>
+
+
+
 ---
 # 2. Predictive Analytics
 In this section we will present our model candidate for the recommender tasks. Specifically : 
@@ -283,7 +399,7 @@ In this section we will try to understand how we might improve our recommender s
 > - We observe better performance of our recommender system based on all the metrics.  The main reason for this improvement comes from the better class balance induced by our assumption. Indeed, there is more listening in these areas.
 > - Finally, we will delineate our conclusion and present improvements
 
-<h2 id="result">A. Result Analysis</h3>
+<h2 id="result">A. Result Analysis</h2>
 
 **F1 score Analysis**
 
