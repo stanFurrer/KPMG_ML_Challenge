@@ -149,16 +149,25 @@ In this section we will present our model candidate for the recommender tasks. S
 **Part1. Remove Features**
 > - Some Features are not relevant for the predictive task and might even hurt or biased the model as it will increased significantly the number of parameters.
 
-> - We will remove : ['geometry','room_id','host_id',"latitude","longitude","last_modified","price","neighbourhood_group"]. We would have keep the host_id if we would have more information about the host as it might influence the decision.
+> - We will keep as features : [room_type, reviews, overall_satisfaction, accommodates, bedrooms, price, year, month, distToKPMG] and predict the [neighbourhood]. We would have keep the host_id if we would have more information about the host as it might influence the decision.
 
-> - **IMPORTANT Note**: I try bining bedrooms and accomodates into 6 class [1,2,3,4,5,>5]. It increase the performance of the baseline model while deacrease the performance of the tree based model. The tree based algorithm are robust to outlier where the baseline aren't. Therefore for the tree based classifier binning will remove some important information while for the baseline classifier it will reduce the impact of the outliers 
-> 
-> 
-> We will bine the number of bedrooms and accomodates into 6 class [1,2,3,4,5,>5]. It is recommended in order to avoid very rare booking
+> - **IMPORTANT Note**: I tried bining bedrooms and accomodates into 6 class [1,2,3,4,5,>5]. It increase the performance of the baseline model while deacrease the performance of the tree based model. The tree based algorithm are robust to outlier where the baseline aren't. Therefore for the tree based classifier binning will remove some important information while for the baseline classifier it will reduce the impact of the outliers. Therefore **WE WON'T USE BINNING** 
 
 **Part2. Encoding**
-> - We will convert "room_type","overall_satisfaction","accommodates","bedrooms","year","month" into Categorical Data. **I tried with and without converting into categorical and the performance seems better when converting into category**
+> - We will convert "room_type" into Categorical Data. 
 > - We will make use of the function get_dummies from pandas. The dummy coding scheme is similar to the one hot encoding scheme, except in the case of dummy coding scheme, when applied on a categorical feature with m distinct labels, we get m-1 binary features. Thus each value of the categorical variable gets converted into a vector of size m-1. The extra feature is completely disregarded and thus if the category values range from {0, 1, ..., m-1} the 0th or the m-1th feature is usually represented by a vector of all zeros (0).
+> - **IMPORTANT Note**: I tried to convert also "overall_satisfaction","accommodates","bedrooms","year","month" into Categorical Data and apply one hot-encoding but it hurts the performance off the tree based models.
+
+To understand this, let’s get into the inner dynamics of tree-bases models. For every tree-based algorithm, there is a sub-algorithm that is used to split the dataset into two bins based on a feature and a value. The splitting algorithm considers all possible splits (based on all features and all possibles values for each feature) and finds the most optimum split based on a criterion. We will not get into details of the criterion (there are multiple ways to do this) but qualitatively speaking, the criterion helps the sub-algorithm select the split that minimizes the impurity of bins. Purity is a proxy for the number of positive or negative samples in a particular bin in a classification problem.
+
+<p align="center">
+  <img src="Images/tree_based.png"   Width="400"></center>
+</p>
+
+If a continuous variable is chosen for a split, then there would be a number of choices of values on which a tree can split and in most cases, the tree can grow in both directions. The resulting tree from a dataset containing a majority of continuous variables that would look like something in the figure to the left.
+
+Categorical variables are naturally disadvantaged in this case and have only a few options for splitting which results in very sparse decision trees. The situation gets worse in variables that have a small number of levels and one-hot encoding falls in this category with just two levels. The trees generally tend to grow in one direction because at every split of a categorical variable there are only two values (0 or 1). The tree grows in the direction of zeroes in the dummy variables.
+
 
 **Part3. Scalling**
 
