@@ -250,6 +250,28 @@ C. [Conclusion and Future work](#Conclusion)<br>
   <img src="Images/missing.png"   Width="800" >
 </p>
 
+<p align="center">
+  <img src="Images/Missing_imputation.png"   Width="800" >
+</p>
+
+**Obervation** : 
+> * The imputation based on predictors match the original distributions
+> * We remove the Minstay night features as it is missing in the all testing dataset. We could have use the [insideairbnb](http://insideairbnb.com/) dataset to found matching paterns. 
+> * We fix the case where the number of bed is egal to zero as it might be an error. We use predictors to get accurate results.
+
+
+<h2 id="missing">C. Frequency Distribution</h2>
+
+<p align="center">
+  <img src="Images/frequency.png"   Width="800" >
+</p>
+
+
+**Obervation** : 
+> * The imputation based on predictors match the original distributions
+> * We remove the Minstay night features as it is missing in the all testing dataset. We could have use the [insideairbnb](http://insideairbnb.com/) dataset to found matching paterns. 
+> * We fix the case where the number of bed is egal to zero as it might be an error. We use predictors to get accurate results.
+
 
 
 ---
