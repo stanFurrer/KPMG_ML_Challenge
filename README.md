@@ -87,7 +87,7 @@
 | **XGboosting**         | 0.804      | 0.7997|
  
 <p align="center">
-  <img src="Images/Score_5km_Fine_grained"   Width="500"></center>
+  <img src="Images/Score_5km_Fine_grained.png"   Width="500"></center>
 </p> 
  
 | Top 5 Areas                   | Predictive Score          
