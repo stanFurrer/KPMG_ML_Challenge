@@ -180,6 +180,9 @@ We will tailord our task by assuming that Rob wish to live at most 5 kilometer f
 <p align="center">
   <img src="Images/final_score.png"   Width="650"></center>
 </p>
+<p align="center">
+  <img src="Images/table_KPMG2.png" Width="500" ></center>
+</p>
 
 **Obervation** : 
 > * Our model have Better performance in term of the NDCG score, Accuracy and F1-score. The main cause is that the class unbalanced has be lowered by our assumption.
