@@ -228,6 +228,12 @@ To evaluate the model performance we will use the NDCG score, f1 score and the a
 
 <h2 id="Modeling">B. Modeling</h3> 
 
+We select tree baseline model and tree tree-based model with an increasing level of complexity. 
+
+> **PLEASE NOTE**: We have organize our data wrangling and data processing in order to optimize the performance of the tree based algorithm. The choices that have been made are expect to hurt significantly the performance of the baseline models. Indeed, we haven't **remove the outliers** in review and price, we haven't **fix the skewedness of the price throught a logarithm scaling and a box-cox treatment**, we haven't **binned some parameters**, we haven't **one hot encode all the categorical parameters** and we haven't **Standardize any parameters**. **HOWEVER** we have carefully designed our code in order to do the mentioned process
+
+> As expected the tree based algorithm have better performance than the baselines. Indeed, we have optimize for tree-based algorithm and for the baseline that have a lot assumptions to met. Our best model is Random Forest. 
+
 <p align="center">
   <img src="Images/result_score.png"   Width="300"></center>
 </p>
@@ -236,9 +242,20 @@ To evaluate the model performance we will use the NDCG score, f1 score and the a
   <img src="Images/result_final.png"   Width="500"></center>
 </p>
 
+> Next we analyse the importance of the features in the decision making of the tree-based classifier. 
+
+
 <p align="center">
   <img src="Images/features_importance.png "   Width="800"></center>
 </p>
+
+**Obervation** : 
+> * For Random Forest and Decision Tree the distance to KPMG is the most impactfull parameters in the decision making. Indeed, as discused KPMG is more or less in the center of berlin. It is one of the places where there is the most AirBnB rental. Selecting KPMG as the center of interest is definitly not the best choice (we made it as a toy exemple) however it seems to be a relevant information
+> * In fact the distance to KPMG leak the real position of the rental and therefore the model "short-cut" is learning process as it learn to match the relative distance to KPMG to a given neighbours.  
+> * However, even if the model would perfectly fit the relation between the distance to KPMG and the area of Berlin it won't be enough as we would have to consider the radious of the distance. This might be the reason why the distance to KPMG is not the only features in the decision making.
+> * The three next most important features are the price, the review and the accomodates.
+> * As expected the month, year and type of room haven't so much influance as they are similarly distributed in each area. They are not relevant to make a distinction.
+> 
 
 
 ---
