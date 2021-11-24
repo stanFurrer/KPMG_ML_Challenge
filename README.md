@@ -399,7 +399,7 @@ Use NumPy's corrcoef and seaborn's heatmap functions to plot the correlation mat
 Chi-squared tests are based on the so-called chi-squared statistic. You calculate the chi-squared statistic with the following formula:
 
 <p align="center">
-  <img src="Images/chi_square.png" Width="400">
+  <img src="Images/chi_square.png" Width="250">
 </p>
 
 The Chi-square test of independence tests if there is a significant relationship between two categorical variables.The data is usually displayed in a cross-tabulation format with each row representing a category for one variable and each column representing a category for another variable.
