@@ -118,11 +118,10 @@
 A. [Variable types](#type)<br>
 B. [Missing Values Analysis and Treatment](#missing)<br>
 C. [Frequency Distribution](#freq)<br>
-D. [Outliers Analysis](#Outlier)<br>
+D. [Normality and Outliers Analysis](#Outlier)<br>
 E. [Bivariate Analysis](#bivariate)<br>
 F. [Multivariate Analysis](#multivariate)<br>
 G. [Geographic Analysis](#geo)<br>
-H. [Normality](#Normality)<br>
 
 **3. Predictive Analytics**<br>
 A. [Preprocessing](#Preprocessing)<br>
@@ -268,11 +267,80 @@ C. [Conclusion and Future work](#Conclusion)<br>
 
 
 **Obervation** : 
-> * The imputation based on predictors match the original distributions
-> * We remove the Minstay night features as it is missing in the all testing dataset. We could have use the [insideairbnb](http://insideairbnb.com/) dataset to found matching paterns. 
-> * We fix the case where the number of bed is egal to zero as it might be an error. We use predictors to get accurate results.
+> * The over all satisfaction is either very good (4.5-5) or very bad
+> * The number of Bedrooms is mostly between 1 and 3 and the number of accommodates between 1 and 4
+> * Latitude and Longitude present the characteristics of Berlin
+> * The price and review distribution seems to follow logarithmic curves. We will futher analysis their characteristics in the next sections.
+
+<h2 id="Outlier">D. Normality and Outliers Analysis</h2>
+
+**Important Note :** 
+>In the predictive part we will show that tree based model have the best performance. Tree based model have the nice properties to handle outliers. We have compare the performance of our model when removing outlier, when using the log-scale of the price and when letting price and review untouch. The result have shown that tree-based model performance get hurt when we proceed outlier removal as describe in the following. 
+
+However, we will still compute the price-log scale in order to make statistical test.
+
+* <b>Normality</b> - Data should look like a normal distribution. This is important because several statistic tests rely  on this (e.g. t-statistics). Univariate normality doesn't ensure multivariate normality (which is what we would like to have), but it helps.
+
+**Skewdness**
+* Degree of distortion from the symmetrical bell curve or the normal curve. 
+* A symmetrical distribution will have a skewness of "0". 
+* There are two types of Skewness: <b>Positive and Negative.</b> 
+    * <b>Positive Skewness</b> means the tail on the right side of the distribution is longer and fatter. The mean and median will be greater than the mode similar to this dataset. 
+    * <b>Negative Skewness</b> means the tail on the left side of the distribution is longer and fatter. The mean and median will be less than the mode. 
+* Skewness differentiates in extreme values in one versus the other tail. 
 
 
+<p align="center">
+  <img src="https://cdn-images-1.medium.com/max/1600/1*nj-Ch3AUFmkd0JUSOW_bTQ.jpeg"   Width="800" >
+</p>
+
+
+<b>Kurtosis</b>
+According to Wikipedia, 
+
+*In probability theory and statistics, **Kurtosis** is the measure of the "tailedness" of the probability. distribution of a real-valued random variable.* So, In other words, **it is the measure of the extreme values(outliers) present in the distribution.** 
+
+* There are three types of Kurtosis: <b>Mesokurtic, Leptokurtic, and Platykurtic</b>. 
+* **Mesokurtic** is similar to the normal curve with the standard value of 3. This means that the extreme values of this distribution are similar to that of a normal distribution. 
+* **Leptokurtic** Example of leptokurtic distributions are the T-distributions with small degrees of freedom.
+* **Platykurtic** describes a particular statistical distribution with thinner tails than a normal distribution. Because this distribution has thin tails, it has fewer outliers (e.g., extreme values three or more standard deviations from the mean) than do mesokurtic and leptokurtic distributions. 
+
+
+<p align="center">
+  <img src="https://i2.wp.com/mvpprograms.com/help/images/KurtosisPict.jpg?resize=375%2C234"   Width="800" >
+</p>
+
+You can read more about this from [this](https://codeburst.io/2-important-statistics-terms-you-need-to-know-in-data-science-skewness-and-kurtosis-388fef94eeaa) article. 
+
+---
+
+We have one Numerical continuous variable right skewed with high Kurtosis : <font color = "red"><b>Price</b></font>
+
+We have one Numerical discret variable right skewed with high Kurtosis : <font color = "red"><b>Reviews</b></font>
+
+In order to by pass the **right skewed** of price we will take the logarithm of the prices.
+However, Reviews won't become normal after making it logarithm.
+
+
+We will use the Inter Quartile Range(IQR) to detect the outliers. IQR tells us the variation in the data set. Any value, which is beyond the range of -1.5 x IQR to 1.5 x IQR treated as outliers. <font color = "red"><b>Outliers are removed from the dataset</b></font>
+
+<img align="center"  src=" https://miro.medium.com/max/18000/1*2c21SkzJMf3frPXPAR_gZA.png" width="500px">
+
+* Q1 represents the 1st quartile/25th percentile of the data.
+* Q2 represents the 2nd quartile/median/50th percentile of the data.
+* Q3 represents the 3rd quartile/75th percentile of the data. 
+* (Q1–1.5*IQR) represent the smallest value in the data set and (Q3+1.5*IQR)
+    represnt the largest value in the data set.
+    
+- **Price :** Remove Outlier with IQR
+> - Outliers :  <font color = "red"><b>1.6%</b></font>
+> - Clean_price : <font color = "green"><b>98.4% </b></font>with price in [9, 150] Us Dollars
+
+- **Review :** Remove Outlier with IQR
+> - Outliers :  <font color = "red"><b>12.1%</b></font>
+> - Clean_price : <font color = "green"><b>87.9% </b></font>with reviews in [0, 26]
+
+**Note :** We haven't proceed to the removal of the Outlier has it hurt the performance. However, it might be usefull in the future 
 
 ---
 # 2. Predictive Analytics
