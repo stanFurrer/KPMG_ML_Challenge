@@ -154,16 +154,9 @@ The classes (neighbours) are highly imbalanced. Alghough the tree based algorith
   <img src="https://inside-machinelearning.com/wp-content/uploads/2021/09/F1-Score.png"  Width="200"></center>
 </p>
 
-
 <p align="center">
-  <img src="Images/Score9.png"   Width="500"></center>
+  <img src="Images/f1_score.png"   Width="500"></center>
 </p>
-
-
-<p align="center">
-  <img src="Images/Score10.png"   Width="500"></center>
-</p>
-
 
 
 <h2 id="fine">B. Fine-Tuning</h3> 
