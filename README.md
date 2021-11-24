@@ -361,6 +361,8 @@ We will use the Inter Quartile Range(IQR) to detect the outliers. IQR tells us t
 > * As expected when taking the log scale of the price we obtain a distribution that is almost normal.
 > * Removing the outliers with IQR reveals the most relevant price distributions.
 > * We will keep the outliers in the rest of the project as they are most probably linked to the situation where we have a ot of bedrooms or accomodation.
+> * The taking the logarithm of the review doesn't make it normal. 
+
 
 <h2 id="bivariate">E. Bivariate Analysis</h2>
 
