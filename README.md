@@ -226,10 +226,19 @@ To evaluate the model performance we will use the NDCG score, f1 score and the a
   <img src="Images/accuracy.png"   Width="300"></center>
 </p>
 
-
 <h2 id="Modeling">B. Modeling</h3> 
 
+<p align="center">
+  <img src="Images/result_score.png"   Width="300"></center>
+</p>
 
+<p align="center">
+  <img src="Images/result_final.png"   Width="500"></center>
+</p>
+
+<p align="center">
+  <img src="Images/features_importance.png "   Width="800"></center>
+</p>
 
 
 ---
