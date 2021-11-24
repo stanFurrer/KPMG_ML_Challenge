@@ -40,8 +40,23 @@
 > ```
 
  ---
+# Project Description
+**Objective:**
+ 
+ > In this project, we will perform a <b>descriptive</b> and <b>exploratory</b> analysis of the data, in order to understand how the phenomena of each variable behave individually and transversely, in addition to generate <b>hypotheses</b> useful for the <b>decision-making </b> part. <b>In the predictive analytics</b> part we will present <font color = "red"><b>our task  to build a model that predicts where Rob, working at KPMG, will make his Airbnb reservation in 2017.</b></font> We will present a set of model candidate for this classification task and study their performance based on the <b>NDCG score</b> and other standard performance metric. We will look at the importance of the features in the decision making and relate the f1-score to each Berlin area with emphasis on the number of reservation per area. Finally, we will present a <b>prescriptive analysis</b> where we will do futher assumptions based on the Data in order to fine-grained our model score.    
+ 
+> The whole analysis will follow a simple and direct structure, well detailed in all topics, aiming at the same time, to create an intuitive and simple <b> guide </b> of which steps must be followed to carry out a good analysis, to in order to understand the data involved in any study.
+ 
+ **Results:**
+ 
+ >**Model Performance Evaluation :** <font color = "red"><b>All Berlin</b></font> **(Standard Solution)**
 
-
+| Model                  | NDCG_score_test           | Accuracy_score_test  |
+| -------------          |:-------------:| -----: |
+| **Random Forest**      | 0.871         | 0.789  |
+| **Decision Tree**      | 0.803         | 0.801  |
+| **XGboosting**         | 0.766         | 0.596  |
+ 
 
 # Part1. Know the facts with descriptive analytics.
 ---
