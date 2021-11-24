@@ -10,8 +10,25 @@
 ```
 (base) conda creat --name KPMG python=3.8
 (KPMG) pip install requirements.txt
-(KPMG) pip install descartes```
+(KPMG) pip install descartes
 ```
+---
+# Description of the data
+
+**Context:**
+
+><i> Since 2008, guests and hosts have used Airbnb to expand on traveling possibilities and present more unique, personalized way of experiencing the world. This dataset describes the listing activity and metrics in Berlin from 2015 to 2019.</i>
+
+**Content:**
+
+><i> This data file includes all needed information to find out more about hosts, geographical availability, necessary metrics to make predictions and draw conclusions.</i>
+
+**Acknowledgements:**
+
+><i> This public dataset is part of Airbnb, and the original source can be found on this <a href="http://tomslee.net/airbnb-data-collection-get-the-data">website</a>.</i>
+ ---
+
+
 
 # Part1. Know the facts with descriptive analytics.
 ---
