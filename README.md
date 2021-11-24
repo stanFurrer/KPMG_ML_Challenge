@@ -608,9 +608,9 @@ The classes (neighbours) are highly imbalanced. Alghough the tree based algorith
 </p>
 
 **Obervation** : 
-> * The f1 Score has a strong variance when the number of Airbnb Rental is low. However, the more we have data the less variance we have.  
-> * The f1 Score have a Mean around 80%. 
-> * The neighbours in the center are more representative of the 80% f1-score.
+> * The F1 Score has a strong variance when the number of Airbnb Rental is low. However, the more we have data the less variance we have.  
+> * The F1 Score have a Mean around 80%. 
+> * The neighbours in the center are more representative of the 80% F1-score.
 
 <h2 id="fine">B. Fine-Tuning</h3> 
 We will tailord our task by assuming that Rob wish to live at most 5 kilometer far from KPMG headquarter. Hopefully, this assumption makes the classes less unbalanced as we have more rental in the center of Berlin. Algought defining KPMG distance as a features will limit the model performance, it match (under a certain precision) the center of interest of Berlin.  
@@ -623,8 +623,8 @@ We will tailord our task by assuming that Rob wish to live at most 5 kilometer f
 </p>
 
 **Obervation** : 
-> * Our model have Better performance in term of the NDCG score, Accuracy and F1-score. The main cause is that the class unbalanced has be lowered by our assumption.
-> * The f1 score have less variance because we have a dense sampling for each area except for **Weißensee**. According to our webseach **Weißensee** is a calm residensial area where there is not so many AirBnB.
+> * Our model have Better performance in term of the NDCG score, Accuracy and F1-score. The main cause is that the class unbalanced has been lowered by our assumption.
+> * The F1 score have less variance because we have a dense sampling for each area except for **Weißensee**. According to our webseach **Weißensee** is a calm residensial area where there is not so many AirBnB.
 
 <h2 id="Conclusion">C. Conclusion and Future work</h3> 
 
