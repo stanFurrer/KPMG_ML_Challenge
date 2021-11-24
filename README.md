@@ -58,7 +58,7 @@
  **Results:**
  
 <p align="center">
-  <img src="Images/table_KPMG.png" Width="400" ></center>
+  <img src="Images/table_KPMG.png" Width="500" ></center>
 </p>
 
  >**Model Performance Evaluation :** All Berlin **(Standard Solution)**
@@ -92,6 +92,11 @@
 | **Decision Tree**      | 0.808      | 0.6532 |
 | **XGboosting**         | 0.804      | 0.7997|
 -->
+
+<p align="center">
+  <img src="Images/table_KPMG2.png" Width="500" ></center>
+</p>
+
 <p align="center">
   <img src="Images/Score_5km_Fine_grained.png"   Width="500"></center>
 </p> 
